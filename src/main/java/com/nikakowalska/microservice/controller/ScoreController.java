@@ -9,7 +9,7 @@ public class ScoreController {
     @Autowired
     private ScoreService scoreService;
 
-    @PostMapping("/playerData")
+    @PostMapping("/{playerData}")
     public boolean postUser(
             @PathVariable String playerData
     ) {
